@@ -7,10 +7,10 @@ require_once('connectDB.php');
 function login() {
     $dbh = connectDB();
     
-    $username = mysqli_real_escape_string($dbh, $_POST['username']);
+    $username = mysqli_real_escape_string($dbh, $_POST['customerID']);
     $password = mysqli_real_escape_string($dbh, $_POST['password']);
     
-    $sql = "select username, firstname, lastname, city, zip, password from User where password = '$password';";
+    $sql = "select customerID, firstname, lastname, city, phone, password from newUser where customerID = '$customerID' and password = '$password';";
     $result = mysqli_query($dbh,$sql); 
     if (!$result)
     {
@@ -20,8 +20,8 @@ function login() {
     {
         echo "Successful login".'<br>';
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        printf("%s (%s) %s %s %s %s \n",$row['username'],$row['firstname'],$row['lastname'],$row['city'],$row['zip'],$row['password']);
-        $sql = "select * from User;";
+        printf("%s %s %s %s %s %s \n",$row['username'],$row['firstname'],$row['lastname'],$row['city'],$row['zip'],$row['password']);
+        $sql = "select * from newUser;";
         $result = mysqli_query($dbh,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         printf("%s %s %s %s %s %s ",$row['username'],$row['firstname'],$row['lastname'],$row['city'],$row['zip'],$row['password']);
@@ -35,8 +35,6 @@ if(isset($_POST['submit']))
     echo "Login _POST'submit' is set".'<br>';
     login();
 }
-else
-{
-    echo "_POST'submit' not true";
-}
+
+
 ?>
