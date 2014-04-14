@@ -4,16 +4,17 @@ body{
 }
 
 .header-container {
- 	border-bottom: 20px solid #7e95cf;
+ 	border-bottom: 20px solid rgba(244, 186, 112, 1.0);
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .main-container { 
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px auto 20px auto;
+	width: 50%;
 }
+
 
 .main {
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -24,14 +25,14 @@ body{
 .footer-container,
 .content-box,
 .main {
-	border-top: 20px solid #7e95cf;
+	border-top: 20px solid rgba(244, 186, 112, 1.0);
 }
 
 .header-container,
 .footer-container,
 .content-box,
 .main {
-    	background: hsla(220, 34%, 44%, 1.0);
+        background: rgba(133, 193, 245, 1.0);
 }
 
 .footer-container {
