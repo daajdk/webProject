@@ -1,5 +1,8 @@
-<?php require 'include/header.php'; ?>
-<?php require 'include/signin-header.php'; ?>
+<?php require_once 'include/header.php'; 
+      require_once 'include/signin-header.php'; 
+      require_once 'login.php';
+      require_once 'createNew.php';
+?>
 
 	<div class="main-container">
             <div class="main wrapper clearfix">
@@ -9,7 +12,7 @@
                     <div class="content-box"> 
                         <p>Enter your information below to get started today!</p>
                         
-                        <form class="signup" name="sign-up" action="#" method="post">
+                        <form class="signup" name="sign-up" action="createNew.php" method="post">
                             <input required class="user-input" type="text" placeholder="First Name"  name="firstname"><br>
                             <input required class="user-input" type="text" placeholder="Last Name"  name="lastname"><br>
                             <input required class="user-input" id = "city" type="text" placeholder="City"  name="city"><br>			    

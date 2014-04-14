@@ -24,7 +24,8 @@ function createNewUser() {
     else
     {
         echo "1 record added".'<br>';
-        $sql = "select * from User;";
+        $sql = "insert into newUser (customerID, firstname, lastname, city, phone, password
+        ) values ('$customerID', '$firstname','$lastname','$city','$phone','$password')";
         $result = mysqli_query($dbh,$sql);
         if(!$result)
         {
