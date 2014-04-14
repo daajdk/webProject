@@ -20,7 +20,14 @@ function login() {
     {
         echo "Successful login".'<br>';
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+<<<<<<< HEAD
+        printf("%s %s %s %s %s %s \n",$row['username'],$row['firstname'],$row['lastname'],$row['city'],$row['zip'],$row['password']);
+=======
         printf("%s (%s) %s %s %s %s \n",$row['username'],$row['firstname'],$row['lastname'],$row['city'],$row['zip'],$row['password']);
+<<<<<<< HEAD
+=======
+>>>>>>> 214085dada3ad87cf69236c69b7a99b49e605b54
+>>>>>>> 19a09f429c2c7b964086d07684aae8c502e3af6d
         $sql = "select * from newUser;";
         $result = mysqli_query($dbh,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -35,6 +42,18 @@ if(isset($_POST['submit']))
     echo "Login _POST'submit' is set".'<br>';
     login();
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+else
+{
+    echo "it is post array";
+}
+echo "okidokey";
+>>>>>>> 214085dada3ad87cf69236c69b7a99b49e605b54
+>>>>>>> 19a09f429c2c7b964086d07684aae8c502e3af6d
 
 ?>

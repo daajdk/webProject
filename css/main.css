@@ -1,4 +1,6 @@
-body{
+@media screen and (min-width: 718px){
+
+body {
     	background-image:url(".lineBackground.jpg");
 	background-repeat: repeat;
 }
@@ -132,5 +134,4 @@ body{
     *zoom: 1;
 }
 
-
-
+}
