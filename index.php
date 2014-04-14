@@ -1,7 +1,5 @@
 <?php require_once 'include/header.php'; 
       require_once 'include/signin-header.php'; 
-      require_once 'login.php';
-      require_once 'createNew.php';
 ?>
 
 	<div class="main-container">
