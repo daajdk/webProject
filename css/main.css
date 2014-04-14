@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 @media screen and (min-width: 718px){
 
 body{
     	background-image: url(".lineBackground.jpg");
+=======
+body{
+    	background-image:url(".lineBackground.jpg");
+>>>>>>> d53716493ecb8466101890ffc423afda35a8f329
 	background-repeat: repeat;
 }
 
@@ -134,4 +139,5 @@ body{
     *zoom: 1;
 }
 
-}
+
+

@@ -1,3 +1,6 @@
+<?php
+    require_once 'login.php';
+?>
 	<div class="header-container">
             <header class="wrapper clearfix">
 

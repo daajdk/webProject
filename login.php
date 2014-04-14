@@ -35,10 +35,6 @@ if(isset($_POST['submit']))
     echo "Login _POST'submit' is set".'<br>';
     login();
 }
-else
-{
-    echo "it is post array";
-}
-echo "okidokey";
+
 
 ?>
